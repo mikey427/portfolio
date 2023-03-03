@@ -4,7 +4,7 @@ class FooterSocials extends Component {
   state = {};
   render() {
     return (
-      <div className="text-text flex flex-col justify-end w-24 content-center fixed bottom-0">
+      <div className="text-text flex flex-col justify-end w-24 fixed bottom-0">
         <ul className="">
           <li>
             <a href="PLACEHOLDER">
