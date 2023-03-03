@@ -10,9 +10,15 @@ class Navbar extends Component {
   state = {};
   render() {
     return (
-      <div>
-        <img src="../public/logo.png" alt="IMG NOT FOUND"></img>
-        <header className="flex justify-end content-center font-mono text-md">
+      <div className="flex justify-between shadow-lg">
+        <a href="PLACEHOLDER">
+          <img
+            className="w-max h-max ml-4"
+            src={process.env.PUBLIC_URL + "logo.png"}
+            alt="IMG NOT FOUND"
+          ></img>
+        </a>
+        <header className="flex justify-end font-mono text-md my-auto">
           {[
             ["About", "/about"],
             ["Experience", "/experience"],
@@ -23,9 +29,12 @@ class Navbar extends Component {
               {title}
             </a>
           ))}
-          <h1 className="px-2 m-4 font-bold border text-pink-500 border-pink-500 rounded">
+          <a
+            href="PLACEHOLDER"
+            className="px-2 m-4 font-bold border text-pink-500 border-pink-500 rounded hover:bg-pink-500 hover:bg-opacity-20"
+          >
             Resume
-          </h1>
+          </a>
         </header>
       </div>
     );
