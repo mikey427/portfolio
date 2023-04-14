@@ -1,29 +1,27 @@
-import React, { Component } from "react";
+import React from "react";
 
-class FooterSocials extends Component {
-  state = {};
-  render() {
-    return (
-      <div className="text-text flex flex-col justify-end w-24 fixed bottom-0">
-        <ul className="">
-          <li>
-            <a href="PLACEHOLDER">
-              <svg
-                className="mx-auto my-12"
-                version="1.1"
-                id="Layer_1"
-                xmlns="http://www.w3.org/2000/svg"
-                x="0px"
-                y="0px"
-                width="24px"
-                height="24px"
-                viewBox="0 0 511 512"
-              >
-                <path
-                  fill="none"
-                  opacity="1.000000"
-                  stroke="none"
-                  d="
+function FooterSocials() {
+  return (
+    <div className="text-text flex flex-col justify-end w-24 fixed bottom-0">
+      <ul className="">
+        <li>
+          <a href="PLACEHOLDER">
+            <svg
+              className="group transition ease-in-out duration-500 mx-auto my-12 hover:transition hover:-translate-y-1 hover:ease-in-out hover:duration-200"
+              version="1.1"
+              id="Layer_1"
+              xmlns="http://www.w3.org/2000/svg"
+              x="0px"
+              y="0px"
+              width="24px"
+              height="24px"
+              viewBox="0 0 511 512"
+            >
+              <path
+                fill="none"
+                opacity="1.000000"
+                stroke="none"
+                d="
 M356.000000,513.000000 
 	C310.979095,513.000000 265.958221,513.000000 220.600784,512.691284 
 	C220.847061,511.799896 221.332809,511.038422 222.027267,510.661285 
@@ -59,13 +57,13 @@ M356.000000,513.000000
 	C340.020416,497.395294 344.242035,504.652100 352.388489,509.746613 
 	C353.741394,510.592682 354.803497,511.903778 356.000000,513.000000 
 z"
-                />
-                <path
-                  className="fill-darktext"
-                  fill="none"
-                  opacity="1.000000"
-                  stroke="none"
-                  d="
+              />
+              <path
+                className="fill-darktext group-hover:fill-pink-500 hover:fill-pink-500"
+                fill="none"
+                opacity="1.000000"
+                stroke="none"
+                d="
 M356.467590,513.000000 
 	C354.803497,511.903778 353.741394,510.592682 352.388489,509.746613 
 	C344.242035,504.652100 340.020416,497.395294 340.013123,487.763428 
@@ -154,44 +152,43 @@ M356.467590,513.000000
 	C376.233307,510.214630 374.654724,511.662231 373.000000,513.000000 
 	C367.645081,513.000000 362.290131,513.000000 356.467590,513.000000 
 z"
-                />
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="PLACEHOLDER">
-              <svg
-                className=" fill-darktext mx-auto my-12"
-                fill="none"
-                width="24px"
-                height="24px"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g data-name="Layer 2">
-                  <g data-name="linkedin">
-                    <rect
-                      width="24"
-                      height="24"
-                      transform="rotate(180 12 12)"
-                      opacity="0"
-                    />
+              />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="PLACEHOLDER">
+            <svg
+              className=" fill-darktext mx-auto my-12 hover:fill-pink-500 transition ease-in-out duration-500  hover:transition hover:-translate-y-1 hover:ease-in-out hover:duration-200"
+              fill="none"
+              width="24px"
+              height="24px"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g data-name="Layer 2">
+                <g data-name="linkedin">
+                  <rect
+                    width="24"
+                    height="24"
+                    transform="rotate(180 12 12)"
+                    opacity="0"
+                  />
 
-                    <path d="M20 22h-1.67a2 2 0 0 1-2-2v-5.37a.92.92 0 0 0-.69-.93.84.84 0 0 0-.67.19.85.85 0 0 0-.3.65V20a2 2 0 0 1-2 2H11a2 2 0 0 1-2-2v-5.46a6.5 6.5 0 1 1 13 0V20a2 2 0 0 1-2 2zm-4.5-10.31a3.73 3.73 0 0 1 .47 0 2.91 2.91 0 0 1 2.36 2.9V20H20v-5.46a4.5 4.5 0 1 0-9 0V20h1.67v-5.46a2.85 2.85 0 0 1 2.83-2.85z" />
+                  <path d="M20 22h-1.67a2 2 0 0 1-2-2v-5.37a.92.92 0 0 0-.69-.93.84.84 0 0 0-.67.19.85.85 0 0 0-.3.65V20a2 2 0 0 1-2 2H11a2 2 0 0 1-2-2v-5.46a6.5 6.5 0 1 1 13 0V20a2 2 0 0 1-2 2zm-4.5-10.31a3.73 3.73 0 0 1 .47 0 2.91 2.91 0 0 1 2.36 2.9V20H20v-5.46a4.5 4.5 0 1 0-9 0V20h1.67v-5.46a2.85 2.85 0 0 1 2.83-2.85z" />
 
-                    <path d="M6 22H4a2 2 0 0 1-2-2V10a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2zM4 10v10h2V10z" />
+                  <path d="M6 22H4a2 2 0 0 1-2-2V10a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2zM4 10v10h2V10z" />
 
-                    <path d="M5 7a3 3 0 1 1 3-3 3 3 0 0 1-3 3zm0-4a1 1 0 1 0 1 1 1 1 0 0 0-1-1z" />
-                  </g>
+                  <path d="M5 7a3 3 0 1 1 3-3 3 3 0 0 1-3 3zm0-4a1 1 0 1 0 1 1 1 1 0 0 0-1-1z" />
                 </g>
-              </svg>
-            </a>
-          </li>
-        </ul>
-        <hr className="w-px h-32 mx-auto bg-darktext"></hr>
-      </div>
-    );
-  }
+              </g>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <hr className="w-px h-32 mx-auto bg-darktext fill-darktext"></hr>
+    </div>
+  );
 }
 
 export default FooterSocials;

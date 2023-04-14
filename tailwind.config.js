@@ -7,6 +7,7 @@ module.exports = {
         main: "#0A192F",
         text: "#AEB9D8",
         darktext: "#8892B0",
+        lightBG: "#112240",
       },
     },
   },
