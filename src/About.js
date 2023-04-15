@@ -2,7 +2,10 @@ import React from "react";
 
 function About() {
   return (
-    <div id="about" className="text-text bg-main ml-96 my-36">
+    <div
+      id="about"
+      className="text-text bg-main ml-96 my-36 animate-fade-in-up"
+    >
       <h1 className="flex my-auto text-text text-3xl font-bold font-sans">
         <span className="text-2xl text-pink-500 font-mono mt-1 mr-3">01.</span>
         About Me

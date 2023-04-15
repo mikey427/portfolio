@@ -1,6 +1,6 @@
 function Contact() {
   return (
-    <div className="flex flex-col my-36 mx-auto w-1/4">
+    <div className="flex flex-col my-36 mx-auto w-1/4 animate-fade-in-up">
       <h2 className="font-mono font-bold text-xl mx-auto text-pink-500">
         04. What's Next
       </h2>

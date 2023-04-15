@@ -2,7 +2,7 @@ import React from "react";
 
 function FooterSocials() {
   return (
-    <div className="text-text flex flex-col justify-end w-24 fixed bottom-0">
+    <div className="text-text flex flex-col justify-end w-24 fixed bottom-0 animate-fade-in">
       <ul className="">
         <li>
           <a href="https://github.com/mikey427">

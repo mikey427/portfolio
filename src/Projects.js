@@ -23,7 +23,10 @@ function Projects() {
   ];
 
   return (
-    <div id="projects" className="text-text bg-main ml-96 my-36 w-2/3">
+    <div
+      id="projects"
+      className="text-text bg-main ml-96 my-36 w-2/3 animate-fade-in-up"
+    >
       <h1 className="flex my-auto text-text text-3xl font-bold font-sans">
         <span className="text-2xl text-pink-500 font-mono mt-1 mr-3">03.</span>
         Some Things I've Built
@@ -35,7 +38,7 @@ function Projects() {
             <div key={i} className="my-12 grid grid-cols-10">
               <div className="row-span-full col-start-1 col-span-6">
                 <div
-                  className={`bg-pink-500 bg-opacity-60 transition-all duration-500 hover:opacity-0 ease-out absolute w-[${project.customImgSize}] h-80 z-10`}
+                  className={`bg-pink-500 bg-opacity-60 transition-all duration-500 hover:opacity-0 ease-out absolute w-[565px] h-80 z-10 `}
                 ></div>
                 <img
                   className="row-span-full col-start-1 col-span-6 self-center h-80 object-fill"
