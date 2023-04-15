@@ -1,10 +1,11 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useState } from "react";
+import { HashLink as Link } from "react-router-hash-link";
 
 const routes = [
-  ["About", "/about"],
-  ["Experience", "/experience"],
-  ["Projects", "/projects"],
-  ["Resume", "/resume"],
+  ["About", "/pathLink#about"],
+  ["Experience", "/pathLink#experience"],
+  ["Projects", "/pathLink#projects"],
+  ["Resume", "/pathLink#resume"],
 ];
 function Navbar() {
   const [prevScrollPos, setPrevScrollPos] = useState(0);
@@ -35,7 +36,7 @@ function Navbar() {
           : "transition ease-in-out duration-500 -translate-y-20"
       }`}
     >
-      <a href="PLACEHOLDER">
+      <a href="/#">
         <img
           className="w-max h-max ml-4"
           src={process.env.PUBLIC_URL + "logo.png"}
@@ -44,17 +45,21 @@ function Navbar() {
       </a>
       <header className="flex justify-end font-mono text-md my-auto">
         {[
-          ["About", "/about"],
-          ["Experience", "/experience"],
-          ["Projects", "/projects"],
+          ["About", "/#about"],
+          ["Experience", "/#experience"],
+          ["Projects", "/#projects"],
         ].map(([title, route], i) => (
-          <a href={route} key={i} className="m-4">
+          <a
+            href={route}
+            key={i}
+            className="m-4 transition ease-in-out duration-500"
+          >
             <span className="m-2 text-pink-500 font-bold">0{i + 1}.</span>
             {title}
           </a>
         ))}
         <a
-          href="PLACEHOLDER"
+          href="./Michael-Baez-Resume23.pdf"
           className="px-2 m-4 font-bold border text-pink-500 border-pink-500 rounded hover:bg-pink-500 hover:bg-opacity-20"
         >
           Resume

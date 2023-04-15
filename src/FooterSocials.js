@@ -5,7 +5,7 @@ function FooterSocials() {
     <div className="text-text flex flex-col justify-end w-24 fixed bottom-0">
       <ul className="">
         <li>
-          <a href="PLACEHOLDER">
+          <a href="https://github.com/mikey427">
             <svg
               className="group transition ease-in-out duration-500 mx-auto my-12 hover:transition hover:-translate-y-1 hover:ease-in-out hover:duration-200"
               version="1.1"
@@ -157,7 +157,7 @@ z"
           </a>
         </li>
         <li>
-          <a href="PLACEHOLDER">
+          <a href="https://www.linkedin.com/in/michaeldbaez/">
             <svg
               className=" fill-darktext mx-auto my-12 hover:fill-pink-500 transition ease-in-out duration-500  hover:transition hover:-translate-y-1 hover:ease-in-out hover:duration-200"
               fill="none"

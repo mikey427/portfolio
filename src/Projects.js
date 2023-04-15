@@ -5,7 +5,8 @@ function Projects() {
       description:
         "A mobile application which connects users who need a place to park with parking spots provided by other users. Built by myself and 3 peers for our Capstone Project at FullStack Academy.",
       tech: ["React-Native", "Firebase", "Google Maps API"],
-      image: "",
+      image: "./ParkAppCaptureNew.jpg",
+      customImgSize: "565px",
       githubLink: "https://github.com/Parkpp/parkapp",
       deployedLink: "",
     },
@@ -14,14 +15,15 @@ function Projects() {
       description:
         "A responsive web app that displays the weather for 4 locations simultaneously with the ability to change those locations. Your set locations are stored in localStorage so that way you don't have to enter your locations each time you enter the app.",
       tech: ["React", "Node.JS", "RapidAPI's Weather API"],
-      image: "",
+      image: "./cloudCompanion.jpeg",
+      customImgSize: "611px",
       githubLink: "https://github.com/mikey427/Cloud-Companion",
       deployedLink: "",
     },
   ];
 
   return (
-    <div className="text-text bg-main ml-96 mt-36 w-2/3">
+    <div id="projects" className="text-text bg-main ml-96 my-36 w-2/3">
       <h1 className="flex my-auto text-text text-3xl font-bold font-sans">
         <span className="text-2xl text-pink-500 font-mono mt-1 mr-3">03.</span>
         Some Things I've Built
@@ -32,11 +34,13 @@ function Projects() {
           return (
             <div key={i} className="my-12 grid grid-cols-10">
               <div className="row-span-full col-start-1 col-span-6">
-                <div className="bg-pink-500 bg-opacity-60 transition-all duration-500 hover:opacity-0 ease-out absolute w-[611px] h-80 z-10"></div>
+                <div
+                  className={`bg-pink-500 bg-opacity-60 transition-all duration-500 hover:opacity-0 ease-out absolute w-[${project.customImgSize}] h-80 z-10`}
+                ></div>
                 <img
-                  className="row-span-full col-start-1 col-span-6 self-center h-80"
+                  className="row-span-full col-start-1 col-span-6 self-center h-80 object-fill"
                   alt=""
-                  src="./cloudCompanion.jpeg"
+                  src={project.image}
                 ></img>
               </div>
 
@@ -48,7 +52,7 @@ function Projects() {
                   {project.name}
                 </h1>
                 <div className=" h-44 bg bg-lightBG w-full shadow-xl text-lg rounded z-20">
-                  <p className="p-8">{project.description}</p>
+                  <p className="p-8 text-right">{project.description}</p>
                 </div>
                 <ul className="flex ml-auto mr-0 text-sm my-2 font-mono">
                   {project.tech.map((tech, i2) => {
@@ -61,7 +65,7 @@ function Projects() {
                 </ul>
                 <ul className="flex ml-auto mr-0 text-sm my-2">
                   <li className="flex">
-                    <a href="PLACEHOLDER">
+                    <a href={project.githubLink}>
                       <svg
                         className="group mx-auto"
                         version="1.1"
@@ -227,7 +231,7 @@ function Projects() {
                 <img
                   className="row-span-full col-start-1 col-span-6 self-center h-80"
                   alt=""
-                  src="./cloudCompanion.jpeg"
+                  src={project.image}
                 ></img>
               </div>
 
@@ -239,7 +243,7 @@ function Projects() {
                   {project.name}
                 </h1>
                 <div className=" h-44 bg bg-lightBG w-full shadow-xl text-lg rounded z-20">
-                  <p className="p-8">{project.description}</p>
+                  <p className="p-8 text-left">{project.description}</p>
                 </div>
                 <ul className="flex ml-0 mr-auto text-sm my-2 font-mono">
                   {project.tech.map((tech, i2) => {

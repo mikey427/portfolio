@@ -3,12 +3,13 @@ import Navbar from "./Navbar";
 import About from "./About";
 import Experience from "./Experience";
 import Projects from "./Projects";
+import Contact from "./Contact";
 import FooterSocials from "./FooterSocials";
 import FooterEmail from "./FooterEmail";
 
 function App() {
   return (
-    <div className="text-text bg-main w-full h-full flex flex-col min-h-screen">
+    <div className="text-text bg-main w-full h-full flex flex-col min-h-screen scroll-smooth">
       <Navbar />
       <div className="flex flex-row h-screen">
         <FooterSocials />
@@ -26,7 +27,7 @@ function App() {
             TypeScript, PHP, and frameworks like React/Redux, AngularJS and
             Laravel, I design effective and functional applications.
           </p>
-          <a href="PLACEHOLDER">
+          <a href="/#experience">
             <h2 className="text-xl text-pink-500 font-mono my-12 w-max p-4 border  rounded border-pink-500 hover:bg-pink-500 hover:bg-opacity-20">
               Check out my work!
             </h2>
@@ -38,6 +39,7 @@ function App() {
       <About />
       <Experience />
       <Projects />
+      <Contact />
     </div>
   );
 }

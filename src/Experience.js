@@ -38,7 +38,7 @@ function Experience() {
   }
 
   return (
-    <div className="text-text bg-main mx-auto mt-36 w-1/2">
+    <div id="experience" className="text-text bg-main mx-auto my-36 w-1/2">
       <h1 className="flex my-auto text-text text-3xl font-bold font-sans">
         <span className="text-2xl text-pink-500 font-mono mt-1 mr-3">02.</span>
         My Experience
