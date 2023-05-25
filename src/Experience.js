@@ -40,12 +40,17 @@ function Experience() {
   return (
     <div
       id="experience"
-      className="text-text bg-main mx-auto my-36 w-1/2 animate-fade-in-up"
+      className="text-text bg-main sm:my-36 w-screen animate-fade-in-up"
     >
-      <h1 className="flex my-auto text-text text-3xl font-bold font-sans">
-        <span className="text-2xl text-pink-500 font-mono mt-1 mr-3">02.</span>
+      {/* <h1 className="flex mt-2 text-2xl text-text sm:text-3xl font-bold font-sans">
+        <span className="text-xl text-pink-500 font-mono ">02.</span>
         My Experience
-        <hr className="h-px my-auto mx-4 w-80 opacity-20 bg-gray-200 border-0 dark:bg-gray-700"></hr>
+        <hr className="h-px my-auto mx-4 w-6 sm:w-80 opacity-20 bg-gray-200 border-0 dark:bg-gray-700"></hr>
+      </h1> */}
+      <h1 className="flex text-2xl ml-4 mt-2 text-text md:text-3xl font-bold font-sans">
+        <span className="text-xl text-pink-500 font-mono pt-2 mr-2">02.</span>
+        <span className="pt-[2px]">My Experience</span>
+        <hr className="h-px mx-4 my-auto w-1/5 sm:w-1/2 md:w-80 opacity-20 bg-gray-200 border-0 dark:bg-gray-700"></hr>
       </h1>
       <div className="relative flex">
         <hr className="relative w-px my-4 ml-4 h-64 opacity-20 bg-gray-200 border-0 dark:bg-gray-700"></hr>
