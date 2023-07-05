@@ -42,7 +42,7 @@ function Navbar() {
           alt="IMG NOT FOUND"
         ></img>
       </a>
-      <header className="hidden md:flex justify-end font-mono text-md my-auto">
+      <header className="hidden sm:flex justify-end font-mono text-md my-auto">
         {/* {[
           ["About", "/#about"],
           ["Experience", "/#experience"],
@@ -77,7 +77,7 @@ function Navbar() {
         </a>
       </header>
       <svg
-        className="md:hidden h-12 w-12 mr-7 my-auto"
+        className="sm:hidden h-12 w-12 mr-7 my-auto"
         // width="800px"
         // height="800px"
         viewBox="0 0 24 24"
