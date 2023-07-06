@@ -8,3 +8,7 @@ html {
   position: absolute;
 	background-color: #0A192F;
 }
+
+body {
+	overflow-x: hidden;
+}

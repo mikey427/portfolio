@@ -10,7 +10,6 @@ function Navbar () {
     let sideMenu = document.getElementById('side-menu')
     sideMenu.classList.remove('right-[-250px]')
     sideMenu.classList.add('right-0')
-    // sideMenu.classList.remove('hidden')
   }
 
   function closeMenu () {
@@ -18,7 +17,6 @@ function Navbar () {
     let sideMenu = document.getElementById('side-menu')
     sideMenu.classList.remove('right-0')
     sideMenu.classList.add('right-[-250px]')
-    // sideMenu.classList.add('hidden')
   }
 
   function handleScroll () {
@@ -31,6 +29,7 @@ function Navbar () {
       }
       setPrevScrollPos(currentScrollPos)
     }
+    closeMenu()
   }
 
   useEffect(() => {
@@ -41,7 +40,7 @@ function Navbar () {
 
   return (
     <div
-      className={`flex justify-between overscroll-y-none sticky top-0 bg-main shadow-2xl z-50 ${
+      className={`flex justify-between sticky top-0 bg-main shadow-2xl z-40 ${
         visible
           ? 'transition ease-in-out duration-500'
           : 'transition ease-in-out duration-500 -translate-y-20'
