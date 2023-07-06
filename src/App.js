@@ -2,7 +2,7 @@ import "./App.css";
 import Navbar from "./Navbar";
 import About from "./About";
 import Experience from "./Experience";
-import Projects2 from "./Projects(deprecated)";
+// import Projects2 from "./Projects(deprecated)";
 import Contact from "./Contact";
 import FooterSocials from "./FooterSocials";
 import FooterEmail from "./FooterEmail";

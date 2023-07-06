@@ -25,9 +25,11 @@ export default function Projects () {
   ]
 
   return (
-    <div id='projects' className='h-screen mt-40 mb-96'>
+    <div id='projects' className='h-max mt-40 mb-36'>
       <h1 className='flex my-auto lg:mt-36 md:pl-20 xxl:px-0 text-text text-3xl font-bold font-sans lg:ml-32 xl:ml-80 xxl:mx-0'>
-        <span className='ml-4 text-xl text-pink-500 font-mono mt-1 mr-3'>03.</span>
+        <span className='ml-4 text-xl text-pink-500 font-mono mt-1 mr-3'>
+          03.
+        </span>
         Some Things I've Built
         <hr className='h-px my-auto mx-4 w-1/5 sm:w-1/2 md:w-80 opacity-20 bg-gray-200 border-0 dark:bg-gray-700'></hr>
       </h1>
@@ -45,10 +47,12 @@ export default function Projects () {
                 alt='Project Preview'
               />
               <div className='px-6 py-4'>
-							<a href={project.githubLink}>
-                <div className='font-bold text-text text-xl mb-2 group/link flex justify-between'>
-                  <span className="inline-block group-hover/link:text-pink-500">{project.name}</span>
-                  <span className="ml-3 inline-block">
+                <a href={project.githubLink}>
+                  <div className='font-bold text-text text-xl mb-2 group/link flex justify-between'>
+                    <span className='inline-block group-hover/link:text-pink-500'>
+                      {project.name}
+                    </span>
+                    <span className='ml-3 inline-block'>
                       <svg
                         className='group'
                         version='1.1'
@@ -197,9 +201,9 @@ export default function Projects () {
   z'
                         />
                       </svg>
-                  </span>
-                </div>
-								</a>
+                    </span>
+                  </div>
+                </a>
                 <p className='text-darktext'>{project.description}</p>
               </div>
               <div className='px-6 pt-4 pb-2'>
