@@ -10,7 +10,7 @@ function Navbar () {
     let sideMenu = document.getElementById('side-menu')
     sideMenu.classList.remove('right-[-250px]')
     sideMenu.classList.add('right-0')
-    sideMenu.classList.remove('hidden')
+    // sideMenu.classList.remove('hidden')
   }
 
   function closeMenu () {
@@ -18,7 +18,7 @@ function Navbar () {
     let sideMenu = document.getElementById('side-menu')
     sideMenu.classList.remove('right-0')
     sideMenu.classList.add('right-[-250px]')
-    sideMenu.classList.add('hidden')
+    // sideMenu.classList.add('hidden')
   }
 
   function handleScroll () {
@@ -41,7 +41,7 @@ function Navbar () {
 
   return (
     <div
-      className={`flex justify-between sticky top-0 bg-main shadow-2xl z-50 ${
+      className={`flex justify-between overscroll-y-none sticky top-0 bg-main shadow-2xl z-50 ${
         visible
           ? 'transition ease-in-out duration-500'
           : 'transition ease-in-out duration-500 -translate-y-20'
@@ -90,7 +90,7 @@ function Navbar () {
       </button>
       <div
         id='side-menu'
-        className='transition-all ease-in-out duration-500 right-[-250px] w-[240px] right-0 z-50 top-0 absolute w-52 h-screen bg-lightBG font-mono text-sm'
+        className='transition-all ease-in-out duration-500 right-[-250px] w-[240px] right-0 z-50 top-0 absolute h-screen bg-lightBG font-mono text-sm'
       >
         <button className='sm:hidden sticky ml-44 mt-4' onClick={closeMenu}>
           <svg
