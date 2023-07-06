@@ -4,11 +4,15 @@
 
 html {
   scroll-behavior: smooth;
-  overflow-x: hidden;
   position: absolute;
 	background-color: #0A192F;
 }
 
-body {
-	overflow-x: hidden;
+@media screen and (max-width: 767px) {
+	html {
+		overflow-x: hidden;
+	}
+  body {
+    overflow-x: hidden;
+  }
 }

@@ -89,7 +89,7 @@ function Navbar () {
       </button>
       <div
         id='side-menu'
-        className='transition-all ease-in-out duration-500 right-[-250px] w-[240px] right-0 z-50 top-0 absolute h-screen bg-lightBG font-mono text-sm'
+        className='transition-all ease-in-out duration-500 md:hidden right-[-250px] w-[240px] right-0 z-50 top-0 absolute h-screen bg-lightBG font-mono text-sm'
       >
         <button className='sm:hidden sticky ml-44 mt-4' onClick={closeMenu}>
           <svg

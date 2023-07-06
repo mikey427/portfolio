@@ -26,7 +26,7 @@ export default function Projects () {
 
   return (
     <div id='projects' className='h-max mt-40 mb-36'>
-      <h1 className='flex my-auto lg:mt-36 md:pl-20 xxl:px-0 text-text text-3xl font-bold font-sans lg:ml-32 xl:ml-80 xxl:mx-0'>
+      <h1 className='flex my-auto lg:mt-36 md:pl-20 lg:pl-0 xxl:px-0 text-text text-3xl font-bold font-sans lg:ml-32 xl:ml-80 xxl:mx-0'>
         <span className='ml-4 text-xl text-pink-500 font-mono mt-1 mr-3'>
           03.
         </span>
