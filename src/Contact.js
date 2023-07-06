@@ -1,4 +1,7 @@
 function Contact () {
+  function handleRedirect () {
+    window.open('https://www.brittanychiang.com', '_blank')
+  }
   return (
     <div className='flex flex-col md:mt-64 mx-auto py-3 md:py-0 md:w-3/5 lg:1/3 animate-fade-in-up'>
       <h2 className='font-mono font-bold text-xl mx-auto text-pink-500'>
@@ -18,11 +21,8 @@ function Contact () {
         </button>
       </a>
       <div className='font-mono text-sm mt-36 mx-auto mb-3'>
-        Design influenced by
-        <a className='hover:text-pink-500' href='brittanychiang.com'>
-          {' '}
-          Brittany Chiang
-        </a>
+        Design influenced by{' '}
+        <button onClick={handleRedirect}>Brittany Chiang</button>
       </div>
     </div>
   )

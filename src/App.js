@@ -2,7 +2,6 @@ import './App.css'
 import Navbar from './Navbar'
 import About from './About'
 import Experience from './Experience'
-// import Projects2 from "./Projects(deprecated)";
 import Contact from './Contact'
 import FooterSocials from './FooterSocials'
 import FooterEmail from './FooterEmail'
@@ -10,7 +9,7 @@ import Projects from './Projects'
 
 function App () {
   return (
-    <div className='text-text bg-main w-screen w-max-screen sm:h-screen flex flex-col scroll-smooth xxl:w-1/2 xxl:mx-auto'>
+    <div className='text-text bg-main w-screen w-max-screen flex flex-col scroll-smooth xxl:w-1/2 xxl:mx-auto'>
       <Navbar />
       <div className='flex bg-main flex-row h-screen'>
         <FooterSocials />
@@ -38,13 +37,9 @@ function App () {
         </div>
         <FooterEmail />
       </div>
-
       <About />
-
       <Experience />
-
       <Projects />
-
       <Contact />
     </div>
   )

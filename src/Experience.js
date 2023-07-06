@@ -22,9 +22,9 @@ function Experience () {
       datesEmployed: 'March 2021 - July 2021',
       descriptionBullets: [
         'Completed a 17-week full-time immersive Full Stack Engineering program at Fullstack Academy in July 2021.',
-        'Gained experience working in a simulated work environment, which included code reviews, daily standups, and using Git workflow.',
+        'Gained experience working in a simulated work environment, which included code reviews, daily standups, and using Git for version control.',
         'Developed solo and team projects, which helped to improve team dynamics, Agile development, and research skills for new technologies.',
-        'Acquired experience with various technologies and frameworks relevant to Full Stack Engineering, including [insert relevant technologies/frameworks you learned].'
+        'Acquired experience with various technologies and frameworks relevant to Full Stack Engineering, including HTML/CSS, React/Redux, Node.JS, and Express.JS.'
       ]
     }
   ]
@@ -42,11 +42,6 @@ function Experience () {
       id='experience'
       className='text-text bg-main md:pl-20 lg:pl-32 xl:pl-80 py-36 lg:py-16 w-screen animate-fade-in-up'
     >
-      {/* <h1 className="flex mt-2 text-2xl text-text sm:text-3xl font-bold font-sans">
-        <span className="text-xl text-pink-500 font-mono ">02.</span>
-        My Experience
-        <hr className="h-px my-auto mx-4 w-6 sm:w-80 opacity-20 bg-gray-200 border-0 dark:bg-gray-700"></hr>
-      </h1> */}
       <h1 className='flex text-2xl ml-4 mt-2 text-text md:text-3xl font-bold font-sans'>
         <span className='text-xl text-pink-500 font-mono pt-2 mr-2'>02.</span>
         <span className='pt-[2px]'>My Experience</span>
@@ -94,7 +89,7 @@ function Experience () {
                 className='group text-pink-500 transition duration-300'
               >
                 {experience[selectedJob].name}
-                  <span className='block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-pink-500'></span>
+                <span className='block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-pink-500'></span>
               </a>
             </span>
           </h1>
