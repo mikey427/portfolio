@@ -8,12 +8,14 @@ function Navbar () {
     let sideMenu = document.getElementById('side-menu')
     sideMenu.classList.remove('right-[-250px]')
     sideMenu.classList.add('right-0')
+    sideMenu.classList.remove('hidden')
   }
 
   function closeMenu () {
     let sideMenu = document.getElementById('side-menu')
     sideMenu.classList.remove('right-0')
     sideMenu.classList.add('right-[-250px]')
+    sideMenu.classList.add('hidden')
   }
 
   function handleScroll () {
