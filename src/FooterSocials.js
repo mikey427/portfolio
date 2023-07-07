@@ -9,6 +9,7 @@ function FooterSocials() {
 						href="https://github.com/mikey427"
 						target="_blank"
 						rel="noreferrer"
+						aria-label="Github"
 					>
 						<svg
 							className="group transition ease-in-out duration-500 mx-auto md:my-6 lg:my-12 hover:transition hover:-translate-y-1 hover:ease-in-out hover:duration-200"
@@ -165,6 +166,7 @@ z"
 						href="https://www.linkedin.com/in/michaeldbaez/"
 						target="_blank"
 						rel="noreferrer"
+						aria-label="LinkedIn"
 					>
 						<svg
 							className=" fill-darktext mx-auto md:my-6 lg:my-12 hover:fill-pink-500 transition ease-in-out duration-500  hover:transition hover:-translate-y-1 hover:ease-in-out hover:duration-200"
