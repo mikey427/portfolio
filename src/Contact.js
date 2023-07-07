@@ -18,7 +18,12 @@ function Contact() {
 				queries or messages. If you have any questions or want to get in touch,
 				I would be happy to hear from you.
 			</p>
-			<a href="mailto:mrbaez427@gmail.com" className="mx-auto my-4">
+			<a
+				href="mailto:mrbaez427@gmail.com"
+				className="mx-auto my-4"
+				target="_blank"
+				rel="noreferrer"
+			>
 				<button className="px-7 py-4  font-bold border text-pink-500 border-pink-500 rounded hover:bg-pink-500 hover:bg-opacity-20">
 					Say Hello
 				</button>

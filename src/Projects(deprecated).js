@@ -72,7 +72,11 @@ function Projects() {
 									</ul>
 									<ul className="flex ml-auto mr-0 text-sm my-2">
 										<li className="flex">
-											<a href={project.githubLink}>
+											<a
+												href={project.githubLink}
+												target="_blank"
+												rel="noreferrer"
+											>
 												<svg
 													className="group mx-auto"
 													version="1.1"
@@ -266,7 +270,11 @@ function Projects() {
 									</ul>
 									<ul className="flex ml-0 mr-auto text-sm my-2">
 										<li className="flex">
-											<a href={project.githubLink}>
+											<a
+												href={project.githubLink}
+												target="_blank"
+												rel="noreferrer"
+											>
 												<svg
 													className="group mx-auto"
 													version="1.1"

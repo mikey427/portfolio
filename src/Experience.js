@@ -86,6 +86,8 @@ function Experience() {
 						<span className="flex flex-col group w-max">
 							<a
 								href={experience[selectedJob].link}
+								target="_blank"
+								rel="noreferrer"
 								className="group text-pink-500 transition duration-300"
 							>
 								{experience[selectedJob].name}

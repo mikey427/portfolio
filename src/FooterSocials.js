@@ -5,7 +5,11 @@ function FooterSocials() {
 		<div className="hidden md:text-text md:flex md:flex-col md:justify-end md:w-24 xxl:left-12 md:fixed md:bottom-0 md:animate-fade-in">
 			<ul className="">
 				<li>
-					<a href="https://github.com/mikey427">
+					<a
+						href="https://github.com/mikey427"
+						target="_blank"
+						rel="noreferrer"
+					>
 						<svg
 							className="group transition ease-in-out duration-500 mx-auto md:my-6 lg:my-12 hover:transition hover:-translate-y-1 hover:ease-in-out hover:duration-200"
 							version="1.1"
@@ -157,7 +161,11 @@ z"
 					</a>
 				</li>
 				<li>
-					<a href="https://www.linkedin.com/in/michaeldbaez/">
+					<a
+						href="https://www.linkedin.com/in/michaeldbaez/"
+						target="_blank"
+						rel="noreferrer"
+					>
 						<svg
 							className=" fill-darktext mx-auto md:my-6 lg:my-12 hover:fill-pink-500 transition ease-in-out duration-500  hover:transition hover:-translate-y-1 hover:ease-in-out hover:duration-200"
 							fill="none"

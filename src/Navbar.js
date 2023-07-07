@@ -72,6 +72,8 @@ function Navbar() {
 				</a>
 				<a
 					href="./Michael Baez Tech Resume.pdf"
+					target="_blank"
+					rel="noreferrer"
 					className="px-2 m-4 mr-6 font-bold border text-pink-500 border-pink-500 rounded hover:bg-pink-500 hover:bg-opacity-20 animate-fade-in-down5 duration-300"
 				>
 					Resume

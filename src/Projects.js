@@ -47,7 +47,7 @@ export default function Projects() {
 								alt="Project Preview"
 							/>
 							<div className="px-6 py-4">
-								<a href={project.githubLink}>
+								<a href={project.githubLink} target="_blank" rel="noreferrer">
 									<div className="font-bold text-text text-xl mb-2 group/link flex justify-between">
 										<span className="inline-block group-hover/link:text-pink-500">
 											{project.name}
