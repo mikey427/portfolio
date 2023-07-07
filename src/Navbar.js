@@ -66,6 +66,10 @@ function Navbar () {
           <span className='m-2 text-pink-500 font-bold'>03.</span>
           Projects
         </a>
+        <a href='/#contact' className='m-4 animate-fade-in-down3'>
+          <span className='m-2 text-pink-500 font-bold'>04.</span>
+          Contact
+        </a>
         <a
           href='./Michael Baez Tech Resume.pdf'
           className='px-2 m-4 mr-6 font-bold border text-pink-500 border-pink-500 rounded hover:bg-pink-500 hover:bg-opacity-20 animate-fade-in-down5 duration-300'
