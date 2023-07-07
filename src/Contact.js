@@ -10,7 +10,7 @@ function Contact () {
       <h1 className='text-text font-bold mx-auto my-3 text-5xl sm:text-6xl'>
         Get In Touch
       </h1>
-      <p className='mx-auto text-center py-3 mx-3'>
+      <p className='mx-auto text-center py-3'>
         I am currently seeking new opportunities and my inbox is open for any
         queries or messages. If you have any questions or want to get in touch,
         I would be happy to hear from you.

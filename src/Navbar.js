@@ -42,8 +42,8 @@ function Navbar () {
     <div
       className={`flex justify-between sticky top-0 bg-main shadow-2xl z-40 ${
         visible
-          ? 'transition ease-in-out duration-500'
-          : 'transition ease-in-out duration-500 -translate-y-20'
+          ? 'md:transition md:ease-in-out md:duration-500'
+          : 'md:transition md:ease-in-out md:duration-500 md:-translate-y-20'
       }`}
     >
       <a href='/#'>
