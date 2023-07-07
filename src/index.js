@@ -8,32 +8,31 @@ import Projects from "./Projects";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <App />,
-  },
-  {
-    path: "/about",
-    element: <About />,
-  },
-  {
-    path: "/experience",
-    element: <Experience />,
-  },
-  {
-    path: "/projects",
-    element: <Projects />,
-  },
-  {
-    path: "/resume",
-    element: "",
-  },
+	{
+		path: "/",
+		element: <App />,
+	},
+	{
+		path: "/about",
+		element: <About />,
+	},
+	{
+		path: "/experience",
+		element: <Experience />,
+	},
+	{
+		path: "/projects",
+		element: <Projects />,
+	},
+	{
+		path: "/resume",
+		element: "",
+	},
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
-    <RouterProvider router={router} />
-  </React.StrictMode>
+	<React.StrictMode>
+		<RouterProvider router={router} />
+	</React.StrictMode>
 );
-

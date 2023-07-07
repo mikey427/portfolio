@@ -1,91 +1,94 @@
 function Projects() {
-  const projects = [
-    {
-      name: "Park App",
-      description:
-        "A mobile application which connects users who need a place to park with parking spots provided by other users. Built by myself and 3 peers for our Capstone Project at FullStack Academy.",
-      tech: ["React-Native", "Firebase", "Google Maps API"],
-      image: "./ParkAppCaptureNew.jpg",
-      customImgSize: "565px",
-      githubLink: "https://github.com/Parkpp/parkapp",
-      deployedLink: "",
-    },
-    {
-      name: "Cloud Companion",
-      description:
-        "A responsive web app that displays the weather for 4 locations simultaneously with the ability to change those locations. Your set locations are stored in localStorage so that way you don't have to enter your locations each time you enter the app.",
-      tech: ["React", "Node.JS", "RapidAPI's Weather API"],
-      image: "./cloudCompanion.jpeg",
-      customImgSize: "611px",
-      githubLink: "https://github.com/mikey427/Cloud-Companion",
-      deployedLink: "",
-    },
-  ];
+	const projects = [
+		{
+			name: "Park App",
+			description:
+				"A mobile application which connects users who need a place to park with parking spots provided by other users. Built by myself and 3 peers for our Capstone Project at FullStack Academy.",
+			tech: ["React-Native", "Firebase", "Google Maps API"],
+			image: "./ParkAppCaptureNew.jpg",
+			customImgSize: "565px",
+			githubLink: "https://github.com/Parkpp/parkapp",
+			deployedLink: "",
+		},
+		{
+			name: "Cloud Companion",
+			description:
+				"A responsive web app that displays the weather for 4 locations simultaneously with the ability to change those locations. Your set locations are stored in localStorage so that way you don't have to enter your locations each time you enter the app.",
+			tech: ["React", "Node.JS", "RapidAPI's Weather API"],
+			image: "./cloudCompanion.jpeg",
+			customImgSize: "611px",
+			githubLink: "https://github.com/mikey427/Cloud-Companion",
+			deployedLink: "",
+		},
+	];
 
-  return (
-    <div
-      id="projects"
-      className="text-text bg-main mx-auto w-screen animate-fade-in-up xxl:w-max xxl:mx-0 xxl:px-0"
-    >
+	return (
+		<div
+			id="projects"
+			className="text-text bg-main mx-auto w-screen animate-fade-in-up xxl:w-max xxl:mx-0 xxl:px-0"
+		>
 			<div className="hidden xl:inline w-2/3 mx-auto ">
-			<h1 className="flex my-auto lg:ml-32 xl:ml-80 lg:mt-36 text-text text-3xl font-bold font-sans">
-        <span className="text-xl text-pink-500 font-mono mt-1 mr-3">03.</span>
-        Some Things I've Built
-        <hr className="h-px my-auto mx-4 w-80 opacity-20 bg-gray-200 border-0 dark:bg-gray-700"></hr>
-      </h1>
-      {projects.map((project, i) => {
-        if (i % 2 === 0) {
-          return (
-            <div key={i} className="my-12 w-2/3 lg:ml-32 xl:ml-80 xxl:ml-0 mx-auto grid grid-cols-10">
-              <div className="row-span-full col-start-1 col-span-6">
-                <div
-                  className={`bg-pink-500 bg-opacity-60 transition-all duration-500 hover:opacity-0 ease-out absolute w-[565px] h-80 z-10 `}
-                ></div>
-                <img
-                  className="row-span-full col-start-1 col-span-6 self-center h-80 object-fill"
-                  alt=""
-                  src={project.image}
-                ></img>
-              </div>
+				<h1 className="flex my-auto lg:ml-32 xl:ml-80 lg:mt-36 text-text text-3xl font-bold font-sans">
+					<span className="text-xl text-pink-500 font-mono mt-1 mr-3">03.</span>
+					Some Things I've Built
+					<hr className="h-px my-auto mx-4 w-80 opacity-20 bg-gray-200 border-0 dark:bg-gray-700"></hr>
+				</h1>
+				{projects.map((project, i) => {
+					if (i % 2 === 0) {
+						return (
+							<div
+								key={i}
+								className="my-12 w-2/3 lg:ml-32 xl:ml-80 xxl:ml-0 mx-auto grid grid-cols-10"
+							>
+								<div className="row-span-full col-start-1 col-span-6">
+									<div
+										className={`bg-pink-500 bg-opacity-60 transition-all duration-500 hover:opacity-0 ease-out absolute w-[565px] h-80 z-10 `}
+									></div>
+									<img
+										className="row-span-full col-start-1 col-span-6 self-center h-80 object-fill"
+										alt=""
+										src={project.image}
+									></img>
+								</div>
 
-              <div className="row-span-full col-span-5 col-end-8 self-center flex flex-col">
-                <h2 className="text-pink-500 ml-auto mr-0 my-1">
-                  Featured Project
-                </h2>
-                <h1 className="text-text font-bold text-2xl ml-auto mr-0 mb-6">
-                  {project.name}
-                </h1>
-                <div className=" h-44 bg bg-lightBG w-full shadow-xl text-lg rounded z-20">
-                  <p className="p-8 text-right">{project.description}</p>
-                </div>
-                <ul className="flex ml-auto mr-0 text-sm my-2 font-mono">
-                  {project.tech.map((tech, i2) => {
-                    return (
-                      <li key={`${i}${i2}`} className="mx-4">
-                        {tech}
-                      </li>
-                    );
-                  })}
-                </ul>
-                <ul className="flex ml-auto mr-0 text-sm my-2">
-                  <li className="flex">
-                    <a href={project.githubLink}>
-                      <svg
-                        className="group mx-auto"
-                        version="1.1"
-                        id="Layer_1"
-                        xmlns="http://www.w3.org/2000/svg"
-                        x="0px"
-                        y="0px"
-                        width="24px"
-                        height="24px"
-                        viewBox="0 0 511 512"
-                      >
-                        <path
-                          fill="none"
-                          opacity="1.000000"
-                          stroke="none"
-                          d="
+								<div className="row-span-full col-span-5 col-end-8 self-center flex flex-col">
+									<h2 className="text-pink-500 ml-auto mr-0 my-1">
+										Featured Project
+									</h2>
+									<h1 className="text-text font-bold text-2xl ml-auto mr-0 mb-6">
+										{project.name}
+									</h1>
+									<div className=" h-44 bg bg-lightBG w-full shadow-xl text-lg rounded z-20">
+										<p className="p-8 text-right">{project.description}</p>
+									</div>
+									<ul className="flex ml-auto mr-0 text-sm my-2 font-mono">
+										{project.tech.map((tech, i2) => {
+											return (
+												<li key={`${i}${i2}`} className="mx-4">
+													{tech}
+												</li>
+											);
+										})}
+									</ul>
+									<ul className="flex ml-auto mr-0 text-sm my-2">
+										<li className="flex">
+											<a href={project.githubLink}>
+												<svg
+													className="group mx-auto"
+													version="1.1"
+													id="Layer_1"
+													xmlns="http://www.w3.org/2000/svg"
+													x="0px"
+													y="0px"
+													width="24px"
+													height="24px"
+													viewBox="0 0 511 512"
+												>
+													<path
+														fill="none"
+														opacity="1.000000"
+														stroke="none"
+														d="
   M356.000000,513.000000
     C310.979095,513.000000 265.958221,513.000000 220.600784,512.691284
     C220.847061,511.799896 221.332809,511.038422 222.027267,510.661285
@@ -121,13 +124,13 @@ function Projects() {
     C340.020416,497.395294 344.242035,504.652100 352.388489,509.746613
     C353.741394,510.592682 354.803497,511.903778 356.000000,513.000000
   z"
-                        />
-                        <path
-                          className="fill-darktext group-hover:fill-pink-500 hover:fill-pink-500"
-                          fill="none"
-                          opacity="1.000000"
-                          stroke="none"
-                          d="
+													/>
+													<path
+														className="fill-darktext group-hover:fill-pink-500 hover:fill-pink-500"
+														fill="none"
+														opacity="1.000000"
+														stroke="none"
+														d="
   M356.467590,513.000000
     C354.803497,511.903778 353.741394,510.592682 352.388489,509.746613
     C344.242035,504.652100 340.020416,497.395294 340.013123,487.763428
@@ -216,67 +219,70 @@ function Projects() {
     C376.233307,510.214630 374.654724,511.662231 373.000000,513.000000
     C367.645081,513.000000 362.290131,513.000000 356.467590,513.000000
   z"
-                        />
-                      </svg>
-                    </a>
-                  </li>
-                  <li>
-                    <img alt=""></img>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          );
-        } else {
-          return (
-            <div key={i} className="my-12 w-2/3 lg:ml-32 xl:ml-80 xxl:ml-0 mx-auto grid grid-cols-10">
-              <div className="row-span-full col-span-5 col-end-11">
-                <div className="bg-pink-500 bg-opacity-60 transition-all duration-500 hover:opacity-0 ease-out absolute w-[565px] h-80 z-10"></div>
-                <img
-                  className="row-span-full col-start-1 col-span-6 self-center h-80"
-                  alt=""
-                  src={project.image}
-                ></img>
-              </div>
+													/>
+												</svg>
+											</a>
+										</li>
+										<li>
+											<img alt=""></img>
+										</li>
+									</ul>
+								</div>
+							</div>
+						);
+					} else {
+						return (
+							<div
+								key={i}
+								className="my-12 w-2/3 lg:ml-32 xl:ml-80 xxl:ml-0 mx-auto grid grid-cols-10"
+							>
+								<div className="row-span-full col-span-5 col-end-11">
+									<div className="bg-pink-500 bg-opacity-60 transition-all duration-500 hover:opacity-0 ease-out absolute w-[565px] h-80 z-10"></div>
+									<img
+										className="row-span-full col-start-1 col-span-6 self-center h-80"
+										alt=""
+										src={project.image}
+									></img>
+								</div>
 
-              <div className="row-span-full col-start-1 col-span-6  self-center flex flex-col">
-                <h2 className="text-pink-500 ml-0 mr-auto my-1">
-                  Featured Project
-                </h2>
-                <h1 className="text-text font-bold text-2xl ml-0 mr-auto mb-6">
-                  {project.name}
-                </h1>
-                <div className=" h-44 bg bg-lightBG w-full shadow-xl text-lg rounded z-20">
-                  <p className="p-8 text-left">{project.description}</p>
-                </div>
-                <ul className="flex ml-0 mr-auto text-sm my-2 font-mono">
-                  {project.tech.map((tech, i2) => {
-                    return (
-                      <li key={`${i}${i2}`} className="mx-4">
-                        {tech}
-                      </li>
-                    );
-                  })}
-                </ul>
-                <ul className="flex ml-0 mr-auto text-sm my-2">
-                  <li className="flex">
-                    <a href={project.githubLink}>
-                      <svg
-                        className="group mx-auto"
-                        version="1.1"
-                        id="Layer_1"
-                        xmlns="http://www.w3.org/2000/svg"
-                        x="0px"
-                        y="0px"
-                        width="24px"
-                        height="24px"
-                        viewBox="0 0 511 512"
-                      >
-                        <path
-                          fill="none"
-                          opacity="1.000000"
-                          stroke="none"
-                          d="
+								<div className="row-span-full col-start-1 col-span-6  self-center flex flex-col">
+									<h2 className="text-pink-500 ml-0 mr-auto my-1">
+										Featured Project
+									</h2>
+									<h1 className="text-text font-bold text-2xl ml-0 mr-auto mb-6">
+										{project.name}
+									</h1>
+									<div className=" h-44 bg bg-lightBG w-full shadow-xl text-lg rounded z-20">
+										<p className="p-8 text-left">{project.description}</p>
+									</div>
+									<ul className="flex ml-0 mr-auto text-sm my-2 font-mono">
+										{project.tech.map((tech, i2) => {
+											return (
+												<li key={`${i}${i2}`} className="mx-4">
+													{tech}
+												</li>
+											);
+										})}
+									</ul>
+									<ul className="flex ml-0 mr-auto text-sm my-2">
+										<li className="flex">
+											<a href={project.githubLink}>
+												<svg
+													className="group mx-auto"
+													version="1.1"
+													id="Layer_1"
+													xmlns="http://www.w3.org/2000/svg"
+													x="0px"
+													y="0px"
+													width="24px"
+													height="24px"
+													viewBox="0 0 511 512"
+												>
+													<path
+														fill="none"
+														opacity="1.000000"
+														stroke="none"
+														d="
   M356.000000,513.000000
     C310.979095,513.000000 265.958221,513.000000 220.600784,512.691284
     C220.847061,511.799896 221.332809,511.038422 222.027267,510.661285
@@ -312,13 +318,13 @@ function Projects() {
     C340.020416,497.395294 344.242035,504.652100 352.388489,509.746613
     C353.741394,510.592682 354.803497,511.903778 356.000000,513.000000
   z"
-                        />
-                        <path
-                          className="fill-darktext group-hover:fill-pink-500 hover:fill-pink-500"
-                          fill="none"
-                          opacity="1.000000"
-                          stroke="none"
-                          d="
+													/>
+													<path
+														className="fill-darktext group-hover:fill-pink-500 hover:fill-pink-500"
+														fill="none"
+														opacity="1.000000"
+														stroke="none"
+														d="
   M356.467590,513.000000
     C354.803497,511.903778 353.741394,510.592682 352.388489,509.746613
     C344.242035,504.652100 340.020416,497.395294 340.013123,487.763428
@@ -407,23 +413,22 @@ function Projects() {
     C376.233307,510.214630 374.654724,511.662231 373.000000,513.000000
     C367.645081,513.000000 362.290131,513.000000 356.467590,513.000000
   z"
-                        />
-                      </svg>
-                    </a>
-                  </li>
-                  <li>
-                    <img alt=""></img>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          );
-        }
-      })}
+													/>
+												</svg>
+											</a>
+										</li>
+										<li>
+											<img alt=""></img>
+										</li>
+									</ul>
+								</div>
+							</div>
+						);
+					}
+				})}
 			</div>
-
-    </div>
-  );
+		</div>
+	);
 }
 
 export default Projects;

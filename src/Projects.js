@@ -1,74 +1,74 @@
-import React from 'react'
+import React from "react";
 
-export default function Projects () {
-  const projects = [
-    {
-      name: 'Park App',
-      description:
-        'A mobile application which connects users who need a place to park with parking spots provided by other users. Built by myself and 3 peers for our Capstone Project at FullStack Academy.',
-      tech: ['React-Native', 'Firebase', 'Google Maps API'],
-      image: './ParkAppCaptureNew.jpg',
-      customImgSize: '565px',
-      githubLink: 'https://github.com/Parkpp/parkapp',
-      deployedLink: ''
-    },
-    {
-      name: 'Cloud Companion',
-      description:
-        "A responsive web app that displays the weather for 4 locations simultaneously with the ability to change those locations. Your set locations are stored in localStorage so that way you don't have to enter your locations each time you enter the app.",
-      tech: ['React', 'Node.JS', "RapidAPI's Weather API"],
-      image: './cloudCompanion.jpeg',
-      customImgSize: '611px',
-      githubLink: 'https://github.com/mikey427/Cloud-Companion',
-      deployedLink: ''
-    }
-  ]
+export default function Projects() {
+	const projects = [
+		{
+			name: "Park App",
+			description:
+				"A mobile application which connects users who need a place to park with parking spots provided by other users. Built by myself and 3 peers for our Capstone Project at FullStack Academy.",
+			tech: ["React-Native", "Firebase", "Google Maps API"],
+			image: "./ParkAppCaptureNew.jpg",
+			customImgSize: "565px",
+			githubLink: "https://github.com/Parkpp/parkapp",
+			deployedLink: "",
+		},
+		{
+			name: "Cloud Companion",
+			description:
+				"A responsive web app that displays the weather for 4 locations simultaneously with the ability to change those locations. Your set locations are stored in localStorage so that way you don't have to enter your locations each time you enter the app.",
+			tech: ["React", "Node.JS", "RapidAPI's Weather API"],
+			image: "./cloudCompanion.jpeg",
+			customImgSize: "611px",
+			githubLink: "https://github.com/mikey427/Cloud-Companion",
+			deployedLink: "",
+		},
+	];
 
-  return (
-    <div id='projects' className='h-max mt-40 mb-36'>
-      <h1 className='flex my-auto lg:mt-36 md:pl-20 lg:pl-0 xxl:px-0 text-text text-3xl font-bold font-sans lg:ml-32 xl:ml-80 xxl:mx-0'>
-        <span className='ml-4 text-xl text-pink-500 font-mono mt-1 mr-3'>
-          03.
-        </span>
-        Some Things I've Built
-        <hr className='h-px my-auto mx-4 w-1/5 sm:w-1/2 md:w-80 opacity-20 bg-gray-200 border-0 dark:bg-gray-700'></hr>
-      </h1>
-      <div className='flex flex-col justify-center lg:flex-row mx-auto xxl:justify-evenly w-2/3'>
-        {projects.map((project, idx) => {
-          return (
-            <div
-              className='w-full lg:mr-10 mx-auto mt-4 max-w-sm rounded overflow-hidden shadow-2xl my-10 xxl:my-0  group/img'
-              key={idx}
-            >
-              <div className='w-2/3 bg-pink-500 bg-opacity-50 transition-all duration-500 group-hover/img:opacity-0 ease-out absolute md:w-96 h-52 z-20'></div>
-              <img
-                className='w-full h-52'
-                src={project.image}
-                alt='Project Preview'
-              />
-              <div className='px-6 py-4'>
-                <a href={project.githubLink}>
-                  <div className='font-bold text-text text-xl mb-2 group/link flex justify-between'>
-                    <span className='inline-block group-hover/link:text-pink-500'>
-                      {project.name}
-                    </span>
-                    <span className='ml-3 inline-block'>
-                      <svg
-                        className='group'
-                        version='1.1'
-                        id='Layer_1'
-                        xmlns='http://www.w3.org/2000/svg'
-                        x='0px'
-                        y='0px'
-                        width='24px'
-                        height='24px'
-                        viewBox='0 0 511 512'
-                      >
-                        <path
-                          fill='none'
-                          opacity='1.000000'
-                          stroke='none'
-                          d='
+	return (
+		<div id="projects" className="h-max mt-40 mb-36">
+			<h1 className="flex my-auto lg:mt-36 md:pl-20 lg:pl-0 xxl:px-0 text-text text-3xl font-bold font-sans lg:ml-32 xl:ml-80 xxl:mx-0">
+				<span className="ml-4 text-xl text-pink-500 font-mono mt-1 mr-3">
+					03.
+				</span>
+				Some Things I've Built
+				<hr className="h-px my-auto mx-4 w-1/5 sm:w-1/2 md:w-80 opacity-20 bg-gray-200 border-0 dark:bg-gray-700"></hr>
+			</h1>
+			<div className="flex flex-col justify-center lg:flex-row mx-auto xxl:justify-evenly w-2/3">
+				{projects.map((project, idx) => {
+					return (
+						<div
+							className="w-full lg:mr-10 mx-auto mt-4 max-w-sm rounded overflow-hidden shadow-2xl my-10 xxl:my-0  group/img"
+							key={idx}
+						>
+							<div className="w-2/3 bg-pink-500 bg-opacity-50 transition-all duration-500 group-hover/img:opacity-0 ease-out absolute md:w-96 h-52 z-20"></div>
+							<img
+								className="w-full h-52"
+								src={project.image}
+								alt="Project Preview"
+							/>
+							<div className="px-6 py-4">
+								<a href={project.githubLink}>
+									<div className="font-bold text-text text-xl mb-2 group/link flex justify-between">
+										<span className="inline-block group-hover/link:text-pink-500">
+											{project.name}
+										</span>
+										<span className="ml-3 inline-block">
+											<svg
+												className="group"
+												version="1.1"
+												id="Layer_1"
+												xmlns="http://www.w3.org/2000/svg"
+												x="0px"
+												y="0px"
+												width="24px"
+												height="24px"
+												viewBox="0 0 511 512"
+											>
+												<path
+													fill="none"
+													opacity="1.000000"
+													stroke="none"
+													d="
   M356.000000,513.000000
     C310.979095,513.000000 265.958221,513.000000 220.600784,512.691284
     C220.847061,511.799896 221.332809,511.038422 222.027267,510.661285
@@ -103,14 +103,14 @@ export default function Projects () {
     C339.938080,441.437408 339.995575,464.600555 340.013123,487.763428
     C340.020416,497.395294 344.242035,504.652100 352.388489,509.746613
     C353.741394,510.592682 354.803497,511.903778 356.000000,513.000000
-  z'
-                        />
-                        <path
-                          className='fill-darktext group-hover/link:fill-pink-500 hover:fill-pink-500'
-                          fill='none'
-                          opacity='1.000000'
-                          stroke='none'
-                          d='
+  z"
+												/>
+												<path
+													className="fill-darktext group-hover/link:fill-pink-500 hover:fill-pink-500"
+													fill="none"
+													opacity="1.000000"
+													stroke="none"
+													d="
   M356.467590,513.000000
     C354.803497,511.903778 353.741394,510.592682 352.388489,509.746613
     C344.242035,504.652100 340.020416,497.395294 340.013123,487.763428
@@ -198,29 +198,29 @@ export default function Projects () {
     C389.929749,496.150879 385.797668,503.583099 377.977203,509.005493
     C376.233307,510.214630 374.654724,511.662231 373.000000,513.000000
     C367.645081,513.000000 362.290131,513.000000 356.467590,513.000000
-  z'
-                        />
-                      </svg>
-                    </span>
-                  </div>
-                </a>
-                <p className='text-darktext'>{project.description}</p>
-              </div>
-              <div className='px-6 pt-4 pb-2'>
-                <span className='inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-main bg-pink-500 mr-2 mb-2'>
-                  {project.tech[0]}
-                </span>
-                <span className='inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-main bg-pink-500  mr-2 mb-2'>
-                  {project.tech[1]}
-                </span>
-                <span className='inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-main bg-pink-500 mr-2 mb-2'>
-                  {project.tech[2]}
-                </span>
-              </div>
-            </div>
-          )
-        })}
-      </div>
-    </div>
-  )
+  z"
+												/>
+											</svg>
+										</span>
+									</div>
+								</a>
+								<p className="text-darktext">{project.description}</p>
+							</div>
+							<div className="px-6 pt-4 pb-2">
+								<span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-main bg-pink-500 mr-2 mb-2">
+									{project.tech[0]}
+								</span>
+								<span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-main bg-pink-500  mr-2 mb-2">
+									{project.tech[1]}
+								</span>
+								<span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-main bg-pink-500 mr-2 mb-2">
+									{project.tech[2]}
+								</span>
+							</div>
+						</div>
+					);
+				})}
+			</div>
+		</div>
+	);
 }
