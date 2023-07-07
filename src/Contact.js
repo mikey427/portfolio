@@ -3,7 +3,7 @@ function Contact () {
     window.open('https://www.brittanychiang.com', '_blank')
   }
   return (
-    <div className='flex flex-col md:mt-64 mx-auto py-3 md:py-0 md:w-3/5 lg:1/3 animate-fade-in-up'>
+    <div id="contact" className='flex flex-col md:mt-64 mx-auto py-3 md:py-0 md:w-3/5 lg:1/3 animate-fade-in-up'>
       <h2 className='font-mono font-bold text-xl mx-auto text-pink-500'>
         04. What's Next
       </h2>
