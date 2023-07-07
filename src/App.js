@@ -1,11 +1,10 @@
-import './App.css'
 import Navbar from './Navbar'
 import About from './About'
 import Experience from './Experience'
+import Projects from './Projects'
 import Contact from './Contact'
 import FooterSocials from './FooterSocials'
 import FooterEmail from './FooterEmail'
-import Projects from './Projects'
 
 function App () {
   return (

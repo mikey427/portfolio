@@ -22,7 +22,9 @@ function Contact () {
       </a>
       <div className='font-mono text-sm mt-36 mx-auto mb-3'>
         Design influenced by{' '}
-        <button onClick={handleRedirect}>Brittany Chiang</button>
+        <button className='hover:text-pink-500' onClick={handleRedirect}>
+          Brittany Chiang
+        </button>
       </div>
     </div>
   )
